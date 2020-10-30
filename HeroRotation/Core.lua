@@ -345,7 +345,7 @@
           -- Fel Explosives (7.2 Patch)
           [120651] = true
     }
-    -- Disable the AoE if we target an unit that is immune to AoE spells.
+    -- Disable the AoE if we target a unit that is immune to AoE spells.
     function HR.AoEON ()
       return HeroRotationCharDB.Toggles[2] and not AoEImmuneNPCID[Target:NPCID()];
     end
